@@ -18,15 +18,15 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      # 2. Genera el gráfico clásico
+      # 2. Genera el primer gráfico
       - name: Generate Classic Metrics
         uses: lowlighter/metrics@latest
         with:
           filename: github-metrics.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          config_push: false
+          output_action: 'local'
 
-      # 3. Genera el gráfico de commits
+      # 3. Genera el segundo gráfico
       - name: Generate Isocalendar (Half-year)
         uses: lowlighter/metrics@latest
         with:
@@ -35,15 +35,13 @@ jobs:
           base: ""
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
-          config_push: false
+          output_action: 'local'
       
-      # 4. Sube los archivos .svg en un solo commit
+      # 4. Sube AMBOS archivos .svg en un solo commit
       - name: Commit and push metrics
         uses: EndBug/add-and-commit@v9
         with:
-          # Busca todos los archivos .svg modificados
           add: '*.svg'
-          # Usa un mensaje de commit personalizado
           message: '📊 Chore: Update metrics'
           author_name: github-actions[bot]
           author_email: github-actions[bot]@users.noreply.github.com
