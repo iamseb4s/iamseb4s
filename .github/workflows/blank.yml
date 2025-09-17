@@ -23,24 +23,24 @@ jobs:
         uses: lowlighter/metrics@latest
         with:
           filename: github-metrics.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          output_action: 'local'
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       # 3. Genera el segundo gráfico
       - name: Generate Isocalendar (Half-year)
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.plugin.isocalendar.svg
-          token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
-          output_action: 'local'
+          token: ${{ secrets.GITHUB_TOKEN }}
       
       # 4. Sube AMBOS archivos .svg en un solo commit
       - name: Commit and push metrics
         uses: EndBug/add-and-commit@v9
         with:
+          # Le pasamos el token con permisos de ESCRITURA solo a este paso
+          token: ${{ secrets.METRICS_TOKEN }} 
           add: '*.svg'
           message: '📊 Chore: Update metrics'
           author_name: github-actions[bot]
