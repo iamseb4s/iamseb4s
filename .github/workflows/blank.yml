@@ -1,12 +1,9 @@
 name: Generate GitHub Metrics
 
 on:
-  # Se ejecuta a la medianoche (UTC) todos los días
   schedule:
     - cron: "0 0 * * *"
-  # Permite la ejecución manual desde la pestaña Actions
   workflow_dispatch:
-  # Se ejecuta en cada push a la rama main
   push:
     branches:
       - "main"
@@ -15,12 +12,13 @@ jobs:
   github-metrics:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # Esencial para que la acción pueda escribir en el repositorio
+      contents: write
     steps:
+      # 1. Descarga el código del repositorio
       - name: Check out repository
         uses: actions/checkout@v4
-        
-      # Primer paso: Genera el archivo de métricas clásicas
+
+      # 2. Genera el gráfico clásico
       - name: Generate Classic Metrics
         uses: lowlighter/metrics@latest
         with:
@@ -28,22 +26,24 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           config_push: false
 
-      # Segundo paso: Genera el calendario de contribuciones
+      # 3. Genera el gráfico de commits
       - name: Generate Isocalendar (Half-year)
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.plugin.isocalendar.svg
-          token: ${{ secrets.METRICS_TOKEN }} # Token de acceso
-          base: "" # No se necesita base para este plugin específico
-          plugin_isocalendar: yes # Activa el plugin del calendario
-          plugin_isocalendar_duration: half-year # Configura la duración a medio año
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: half-year
           config_push: false
-
-      # Tercer paso: Sube TODOS los archivos .svg generados
+      
+      # 4. Sube los archivos .svg en un solo commit
       - name: Commit and push metrics
         uses: EndBug/add-and-commit@v9
         with:
-          add: '*.svg' # Añade todos los archivos que terminen en .svg
-          message: '📊 Chore: Update metrics' # Mensaje del commit
+          # Busca todos los archivos .svg modificados
+          add: '*.svg'
+          # Usa un mensaje de commit personalizado
+          message: '📊 Chore: Update metrics'
           author_name: github-actions[bot]
           author_email: github-actions[bot]@users.noreply.github.com
