@@ -1,23 +1,37 @@
-name: Half-year calendar
+name: Generate GitHub Metrics
+
 on:
-  # Schedule daily updates
-  schedule: [{cron: "0 0 * * *"}]
-  # (optional) Run workflow manually
+  # Se ejecuta a la medianoche (UTC) todos los días
+  schedule:
+    - cron: "0 0 * * *"
+  # Permite la ejecución manual desde la pestaña Actions
   workflow_dispatch:
-  # (optional) Run workflow when pushing on master/main
-  push: {branches: ["main"]}
+  # Se ejecuta en cada push a la rama main
+  push:
+    branches:
+      - "main"
+
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
-    environment: 
-      name: production
     permissions:
-      contents: write
+      contents: write # Esencial para que la acción pueda escribir en el repositorio
     steps:
-      - uses: lowlighter/metrics@latest
+      # Primer paso: Genera el archivo de métricas clásicas
+      - name: Generate Classic Metrics
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.classic.svg
+          token: ${{ secrets.METRICS_TOKEN }} # Token de acceso
+          base: header, repositories # Plugins base a usar
+          plugin_lines: yes # Plugin para contar líneas de código
+
+      # Segundo paso: Genera el calendario de contribuciones
+      - name: Generate Isocalendar (Half-year)
+        uses: lowlighter/metrics@latest
         with:
           filename: metrics.plugin.isocalendar.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: half-year
+          token: ${{ secrets.METRICS_TOKEN }} # Token de acceso
+          base: "" # No se necesita base para este plugin específico
+          plugin_isocalendar: yes # Activa el plugin del calendario
+          plugin_isocalendar_duration: half-year # Configura la duración a medio año
