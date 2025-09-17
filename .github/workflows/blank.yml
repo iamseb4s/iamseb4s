@@ -19,14 +19,14 @@ jobs:
     steps:
       # Primer paso: Genera el archivo de métricas clásicas
       - name: Generate Classic Metrics
-      - uses: lowlighter/metrics@latest
+        uses: lowlighter/metrics@latest
         with:
           filename: github-metrics.svg
           token: ${{ secrets.METRICS_TOKEN }}
 
       # Segundo paso: Genera el calendario de contribuciones
       - name: Generate Isocalendar (Half-year)
-      - uses: lowlighter/metrics@latest
+        uses: lowlighter/metrics@latest
         with:
           filename: metrics.plugin.isocalendar.svg
           token: ${{ secrets.METRICS_TOKEN }} # Token de acceso
