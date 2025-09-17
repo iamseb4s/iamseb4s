@@ -23,6 +23,7 @@ jobs:
         with:
           filename: github-metrics.svg
           token: ${{ secrets.METRICS_TOKEN }}
+          config_push: false
 
       # Segundo paso: Genera el calendario de contribuciones
       - name: Generate Isocalendar (Half-year)
@@ -33,3 +34,13 @@ jobs:
           base: "" # No se necesita base para este plugin específico
           plugin_isocalendar: yes # Activa el plugin del calendario
           plugin_isocalendar_duration: half-year # Configura la duración a medio año
+          config_push: false
+
+      # Tercer paso: Sube TODOS los archivos .svg generados
+      - name: Commit and push metrics
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: '*.svg' # Añade todos los archivos que terminen en .svg
+          message: '📊 Chore: Update metrics' # Mensaje del commit
+          author_name: github-actions[bot]
+          author_email: github-actions[bot]@users.noreply.github.com
