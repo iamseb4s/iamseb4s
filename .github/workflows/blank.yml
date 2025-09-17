@@ -17,6 +17,9 @@ jobs:
     permissions:
       contents: write # Esencial para que la acción pueda escribir en el repositorio
     steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        
       # Primer paso: Genera el archivo de métricas clásicas
       - name: Generate Classic Metrics
         uses: lowlighter/metrics@latest
