@@ -1,16 +1,25 @@
-### Hi there 👋
+<p align="center">
+    <img src="https://readme-typing-svg.demolab.com?font=Bebas+Neue&size=50&duration=1&pause=500&color=F7F7F7&center=true&vCenter=true&width=435&lines=Hey!+I+am+Sebas"/></a>
+</p>
+<p align="center">
+    <img src="https://readme-typing-svg.demolab.com?font=Bebas+Neue&size=40&pause=500&color=C5C5C5&center=true&vCenter=true&width=435&lines=Data+Analyst"/></a>
+</p>
 
-<!--
-**sebasnolascop/sebasnolascop** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<p align="center">
+<a href="https://iamsebas.dev"><img src="https://img.shields.io/badge/-WebPage-005A9C?style=flat&amp;logo=world&amp;logoColor=white" alt="WebPage"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="mailto:sebas@iamsebas.dev"><img src="https://img.shields.io/badge/-Mail-c14438?style=flat&amp;logo=Gmail&amp;logoColor=white" alt="Mail"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://www.linkedin.com/in/sebasnolascop/"><img src="https://img.shields.io/badge/-LinkedIn-blue?style=flat&amp;logo=LinkedIn&amp;logoColor=white" alt="Linkedin"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://github.com/sebasnolascop"><img src="https://img.shields.io/badge/-Github-000?style=flat&amp;logo=Github&amp;logoColor=white" alt="Github"></a>
+</p>
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+I'm a Data Analyst who bridges the gap between data analysis and practical application. My expertise is in using Python and SQL not just to interpret data, but to build automated, efficient tools that solve real-world operational problems. I am passionate about creating systems that streamline processes and provide clear, quantifiable value to the business. My goal is to always deliver solutions that are both insightful and functional.
+
+Feel free to contact me! 😉
+
+---
+
+<p align="right">
+    <img src="https://komarev.com/ghpvc/?username=sebasnolascop&style=flat-square&color=blue" alt=""/>
+</p>
