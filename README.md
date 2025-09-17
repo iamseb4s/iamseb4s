@@ -23,3 +23,10 @@ Feel free to contact me! 😉
 <p align="right">
     <img src="https://komarev.com/ghpvc/?username=sebasnolascop&style=flat-square&color=blue" alt=""/>
 </p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/sebasnolascop/sebasnolascop/main/github-metrics.svg" alt="My GitHub Metrics" />
+</p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/sebasnolascop/sebasnolascop/main/metrics.plugin.isocalendar.svg" alt="My Contribution Calendar" />
+</p>
