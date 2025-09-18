@@ -22,9 +22,10 @@ jobs:
       - name: Generate Classic Metrics
         uses: lowlighter/metrics@latest
         with:
-          token: ${{ secrets.METRICS_TOKEN }} 
+          token: ${{ secrets.METRICS_TOKEN }}
           filename: github-metrics.svg
           output_action: 'local'
+          committer_token: ""
 
       # 3. Gráfico contrib
       - name: Generate Isocalendar (Half-year)
@@ -36,6 +37,7 @@ jobs:
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
           output_action: 'local'
+          committer_token: ""
       
       # 4. Sube AMBOS archivos en un solo commit
       - name: Commit and push metrics
@@ -43,5 +45,5 @@ jobs:
         with:
           add: '*.svg'
           message: '📊 Chore: Update metrics'
-          author_name: github-actions
-          author_email: github-actions@users.noreply.github.com
+          author_name: 'GitHub Actions'
+          author_email: '41898282+github-actions[bot]@users.noreply.github.com'
