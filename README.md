@@ -26,8 +26,8 @@ Feel free to contact me! 😉
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/sebasnolascop/sebasnolascop/main/github-metrics.svg" alt="My GitHub Metrics" />
+  <img src="https://github.com/sebasnolascop/sebasnolascop/blob/main/github-metrics.svg?raw=true" alt="My GitHub Metrics" />
 </p>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/sebasnolascop/sebasnolascop/main/metrics.plugin.isocalendar.svg" alt="My Contribution Calendar" />
+  <img src="https://github.com/sebasnolascop/sebasnolascop/blob/main/metrics.plugin.isocalendar.svg?raw=true" alt="My Contribution Calendar" />
 </p>
