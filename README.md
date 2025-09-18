@@ -14,7 +14,8 @@
 
 ---
 
-I'm a Data Analyst who bridges the gap between data analysis and practical application. My expertise is in using Python and SQL not just to interpret data, but to build automated, efficient tools that solve real-world operational problems. I am passionate about creating systems that streamline processes and provide clear, quantifiable value to the business. My goal is to always deliver solutions that are both insightful and functional.
+I'm a Data Analyst who bridges the gap between data analysis and practical application. My expertise is in using Python and SQL not just to interpret data, but to build automated, efficient tools that solve real-world operational problems.
+I am passionate about creating systems that streamline processes and provide clear, quantifiable value to the business. My goal is to always deliver solutions that are both insightful and functional.
 
 Feel free to contact me! 😉
 
