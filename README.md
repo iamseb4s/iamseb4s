@@ -9,7 +9,7 @@
 <a href="https://iamsebas.dev"><img src="https://img.shields.io/badge/-WebPage-005A9C?style=flat&amp;logo=world&amp;logoColor=white" alt="WebPage"></a>&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="mailto:sebas@iamsebas.dev"><img src="https://img.shields.io/badge/-Mail-c14438?style=flat&amp;logo=Gmail&amp;logoColor=white" alt="Mail"></a>&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://www.linkedin.com/in/sebasnolascop/"><img src="https://img.shields.io/badge/-LinkedIn-blue?style=flat&amp;logo=LinkedIn&amp;logoColor=white" alt="Linkedin"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://github.com/sebasnolascop"><img src="https://img.shields.io/badge/-Github-000?style=flat&amp;logo=Github&amp;logoColor=white" alt="Github"></a>
+<a href="https://github.com/iamseb4s"><img src="https://img.shields.io/badge/-Github-000?style=flat&amp;logo=Github&amp;logoColor=white" alt="Github"></a>
 </p>
 
 ---
@@ -26,8 +26,8 @@ Feel free to contact me! 😉
 </p>
 
 <p align="center">
-  <img src="https://github.com/sebasnolascop/sebasnolascop/blob/main/github-metrics.svg?raw=true" alt="My GitHub Metrics" />
+  <img src="https://github.com/iamseb4s/iamseb4s/blob/main/github-metrics.svg?raw=true" alt="My GitHub Metrics" />
 </p>
 <p align="center">
-  <img src="https://github.com/sebasnolascop/sebasnolascop/blob/main/metrics.plugin.isocalendar.svg?raw=true" alt="My Contribution Calendar" />
+  <img src="https://github.com/iamseb4s/iamseb4s/blob/main/metrics.plugin.isocalendar.svg?raw=true" alt="My Contribution Calendar" />
 </p>
