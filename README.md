@@ -6,10 +6,10 @@
 </p>
 
 <p align="center">
-<a href="https://iamsebas.dev"><img src="https://img.shields.io/badge/-WebPage-005A9C?style=flat&amp;logo=world&amp;logoColor=white" alt="WebPage"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://iamsebas.dev/gh-bio-web"><img src="https://img.shields.io/badge/-WebPage-005A9C?style=flat&amp;logo=world&amp;logoColor=white" alt="WebPage"></a>&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="mailto:sebas@iamsebas.dev"><img src="https://img.shields.io/badge/-Mail-c14438?style=flat&amp;logo=Gmail&amp;logoColor=white" alt="Mail"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://www.linkedin.com/in/sebasnolascop/"><img src="https://img.shields.io/badge/-LinkedIn-blue?style=flat&amp;logo=LinkedIn&amp;logoColor=white" alt="Linkedin"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://github.com/iamseb4s"><img src="https://img.shields.io/badge/-Github-000?style=flat&amp;logo=Github&amp;logoColor=white" alt="Github"></a>
+<a href="https://iamsebas.dev/gh-bio-li"><img src="https://img.shields.io/badge/-LinkedIn-blue?style=flat&amp;logo=LinkedIn&amp;logoColor=white" alt="Linkedin"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://iamsebas.dev/gh-bio-gh"><img src="https://img.shields.io/badge/-Github-000?style=flat&amp;logo=Github&amp;logoColor=white" alt="Github"></a>
 </p>
 
 ---
